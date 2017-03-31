@@ -1,0 +1,205 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+/* Set black background color, white text and some padding */
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.myfooter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width:100%;
+    height: 60px;   /* Height of the footer */
+    background: black;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;}
+}
+hr.style8 {
+    border-top: 1px solid rgb(51, 51, 153);
+    border-bottom: 1px solid rgb(51, 51, 153);
+}
+hr.style8:after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    border-top: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+}
+
+hr.style9 {
+    border-top: 1px solid rgb(229, 229, 204);
+    border-bottom: 1px solid rgb(229, 229, 204);
+}
+
+
+
+
+#map {
+    height: 90%;
+    border: 5px solid #999;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#sizedmap {
+    border: 5px solid #999;
+    padding: 0px 20px 0px 20px;
+    margin: 0px 0px 0px 5px;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.options-box-1 {
+    background: #fff;
+    border: 1px solid #999;
+    /*border-radius: 3px;*/
+    height: 90%;
+    /*line-height: 35px;*/
+    padding: 0px 8px 0px 8px;
+    margin: 5px 0px 0px 8px;
+    text-align: left;
+    width: 100%;
+    overflow: scroll;
+}
+
+.options-box-2 {
+    background: #fff;
+    border: 1px solid #999;
+    height: 70%;
+    padding: 0px 18px 0px 8px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+    overflow: scroll;
+}
+
+.options-box-3 {
+    background: #fff;
+    height: 390px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.props-pane-exterior {
+    background: #fff;
+    border: 1px solid #999;
+    /*border-radius: 3px;*/
+    height: 100%;
+    /*line-height: 35px;*/
+    padding: 0px 8px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+    overflow: scroll;
+}
+
+.props-pane-interior {
+    background: #fff;
+    height: 470px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.5);
+    z-index: 50;
+}
+
+/* Inner */
+.popup-inner {
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.navbar-brand
+{
+    font-family: 'Lato', sans-serif;
+    color:grey;
+    font-size: 100%;
+    margin: 0px;
+    padding: 20%;
+}
+
+.showout:hover{
+    z-index:555555 !important;
+}
